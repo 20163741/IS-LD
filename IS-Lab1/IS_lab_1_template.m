@@ -1,3 +1,5 @@
+% DARBAS ATLIKTAS LABORATORIJOJE
+%
 % %Classification using perceptron
 % 
 % %Reading apple images
@@ -69,7 +71,7 @@ x2=[0.81884 0.83535 0.8111 0.77104 0.6279];
 %P=[x1;x2];
 
 %Desired output vector
-T=[1;1;1;-1;-1]; % <- Ä?IA ANKSÄ?IAU BUVO KLAIDA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+T=[1;1;1;-1;-1]; 
 
 %% train single perceptron with two inputs and one output
 
