@@ -82,7 +82,6 @@ w1 = randn(1);
 w2 = randn(1);
 b = randn(1);
 
-
 % calculate weighted sum with randomly generated parameters
 %v1 = <...>; % write your code here
 % calculate current output of the perceptron 
@@ -140,7 +139,6 @@ else
 end
 % calculate the error
 e5 = T(5) - y;
-
 
 % calculate the total error for these 5 inputs 
 e = abs(e1) + abs(e2) + abs(e3) + abs(e4) + abs(e5);
@@ -238,7 +236,6 @@ while e ~= 0 % executes while the total error is not 0
         end
     % calculate the error
     e4 = T(4) - y;
-    
     
     
     v5 = x1(5)*w1 + x2(5)*w2 + b;
