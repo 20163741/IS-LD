@@ -1,5 +1,7 @@
-clear;
 clc;
+clear all;
+close all;
+
 % Duomenu mokymo paruosimas 
 x = 0.1:1/22:1;
 d = (1 + 0.6*sin(2*pi*x/0.7)) + 0.3*sin(2*pi*x)/2;
