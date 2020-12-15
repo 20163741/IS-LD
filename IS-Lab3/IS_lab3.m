@@ -15,18 +15,18 @@ r = [0.5 0.4];
 
 for e=1:100
    for n=1:20
-    y = gauss(x(n),r(1),c(1))*w(1)+gauss(x(n),r(2),c(2))*w(2)+b;
-    err = out(n) - y; 
-    b = b + num*err;
-    w(1) = w(1) + num*err*gauss(x(n),r(1),c(1));
-    w(2) = w(2) + num*err*gauss(x(n),r(2),c(2));
+        y = gauss(x(n),r(1),c(1))*w(1)+gauss(x(n),r(2),c(2))*w(2)+b;
+        err = out(n) - y; 
+        b = b + num*err;
+        w(1) = w(1) + num*err*gauss(x(n),r(1),c(1));
+        w(2) = w(2) + num*err*gauss(x(n),r(2),c(2));
    end
    e = e - 1;
 end
 
 yy = gauss(x,r(1),c(1))*w(1)+gauss(x,r(2),c(2))*w(2)+b;
 
-figure
+figure(1)
 plot(x,out,'r',x,yy,'b'); 
 title('raudona kreive pries apmokymà, o mëlyna po apmokymo')
 legend('pries apmokyma', 'po apmokymo')
