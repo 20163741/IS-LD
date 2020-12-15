@@ -9,10 +9,9 @@ w = [randn(1) randn(1) randn(1)];
 b = randn(1);
 num = 0.1;
 
-%centrø reikğmes c1 ir c2, spinduliø reikğmes r1 ir r2 parinkite rankiniu bûdu;
-c = [0.5 0.8]; %c1 ir c2
-r = [0.4 0.3]; %r1 ir r2
-%-------------------------------------------------------------------------------------
+% c1 ir c2, r1 ir r2 parinkame rankiniu bûdu
+c = [0.6 0.9]; 
+r = [0.5 0.4]; 
 
 for e=1:100
    for n=1:20
