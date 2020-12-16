@@ -12,7 +12,7 @@ pozymiai_tinklo_mokymui = pozymiai_raidems_atpazinti(pavadinimas, 7);
 P = cell2mat(pozymiai_tinklo_mokymui);
 % sukuriama teising¸ atsakym¸ matrica: 11 raid?i¸, 8 eilut?s mokymui
 % create the matrices of correct answers for each line (number of matrices = number of symbol lines)
-T = [eye(8), eye(8), eye(8), eye(8)];
+T = [eye(8), eye(8), eye(8), eye(8), eye(8), eye(8), eye(8)];
 % sukuriamas SBF tinklas duotiems P ir T s?ry?iams
 % create an RBF network for classification with 13 neurons, and sigma = 1
 tinklas = newrb(P,T,0,1,16);
@@ -61,7 +61,7 @@ disp(atsakymas)
 % % figure(7), text(0.1,0.5,atsakymas,'FontSize',38)
 %% ?od?io "KADA" po?ymi¸ i?skyrimas 
 %% Extract features of the test image
-pavadinimas = 'pav2.png';
+pavadinimas = 'pav2.jpg';
 pozymiai_patikrai = pozymiai_raidems_atpazinti(pavadinimas, 1);
 
 %% Raid?i¸ atpa?inimas
@@ -106,7 +106,7 @@ end
 figure(8), text(0.1,0.5,atsakymas,'FontSize',38), axis off
 %% ?od?io "FIKCIJA" po?ymi¸ i?skyrimas 
 %% extract features for next/another test image
-pavadinimas = 'pav.png';
+pavadinimas = 'pav.jpg';
 pozymiai_patikrai = pozymiai_raidems_atpazinti(pavadinimas, 1);
 
 %% Raid?i¸ atpa?inimas
