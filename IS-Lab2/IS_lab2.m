@@ -5,6 +5,9 @@ close all;
 % Duomenu mokymo paruosimas 
 x = 0.1:1/22:1;
 d = (1 + 0.6*sin(2*pi*x/0.7)) + 0.3*sin(2*pi*x)/2;
+plot(x, d); % n
+grid on; % n
+hold on; % n
 
 % Susigeneruojam rand vertes pagal isejimus w1, w2 and b
 w1_1 = randn(1);
@@ -49,3 +52,25 @@ y=v;
 
 %Skaiciuojam klaida
 e=d(1)-y;
+
+% Atnaujinimas 
+eta=0.15;
+w1_2=w1_2+eta*e*y1_1;
+w2_2=w1_2+eta*e*y2_1;
+w3_2=w1_2+eta*e*y3_1;
+w4_2=w1_2+eta*e*y4_1;
+
+b=b+eta*e*1;
+
+delta1=v1_1*(1-v1_1)*e*w1_2;
+delta1=v1_1*(1-v1_1)*e*w1_2;
+delta1=v1_1*(1-v1_1)*e*w1_2;
+delta1=v1_1*(1-v1_1)*e*w1_2;
+
+
+
+
+
+
+
+
