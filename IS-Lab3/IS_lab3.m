@@ -14,8 +14,8 @@ b = randn(1);
 num = 0.1;
 
 % c1 ir c2, r1 ir r2 parinkame rankiniu bûdu
-c = [0.6 0.9]; 
-r = [0.5 0.4]; 
+c = [0.2 0.9]; 
+r = [0.2 0.2]; 
 
 for e=1:100
    for n=1:20
